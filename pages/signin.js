@@ -38,13 +38,13 @@ const Signin = () => {
       >
         {({ isSubmitting }) => (
           <Form>
-            <label htmlFor="login">login</label>
-            <Field id="login" type="text" name="login"/>
+            <label htmlFor="login" className={'block text-gray-700 text-sm font-bold mb-2'}>Login</label>
+            <Field id="login" type="text" name="login" className={'mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'}/>
 
-            <label htmlFor="password">password</label>
-            <Field id="password" type="password" name="password"/>
+            <label htmlFor="password" className={'block text-gray-700 text-sm font-bold mb-2'}>Hasło</label>
+            <Field id="password" type="password" name="password" className={'mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'}/>
 
-            <button type="submit" disabled={isSubmitting}>
+            <button type="submit" disabled={isSubmitting} className={'bg-cyan-700 text-white font-bold py-2 px-4 rounded-xl'}>
               Zaloguj
             </button>
 

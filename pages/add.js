@@ -39,16 +39,16 @@ const Add = () => {
       >
         {({ isSubmitting }) => (
           <Form>
-            <label htmlFor="title">title</label>
-            <Field id="title" type="text" name="title"/>
+            <label htmlFor="title" className={'block text-gray-700 text-sm font-bold mb-2'}>Tytuł</label>
+            <Field id="title" type="text" name="title" className={'mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'}/>
 
-            <label htmlFor="image">image</label>
-            <Field id="image" type="text" name="image"/>
+            <label htmlFor="image" className={'block text-gray-700 text-sm font-bold mb-2'}>Obrazek</label>
+            <Field id="image" type="text" name="image" className={'mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'}/>
 
-            <label htmlFor="content">content</label>
-            <Field id="content" type="text" name="content"/>
+            <label htmlFor="content" className={'block text-gray-700 text-sm font-bold mb-2'}>Opis</label>
+            <Field id="content" type="text" name="content" className={'mb-8 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline'}/>
 
-            <button type="submit" disabled={isSubmitting}>
+            <button type="submit" disabled={isSubmitting} className={'bg-cyan-700 text-white font-bold py-2 px-4 rounded-xl'}>
               Dodaj
             </button>
 
